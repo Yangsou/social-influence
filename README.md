@@ -11,5 +11,6 @@ Input:
   + Dấu slash sử dụng trong đường dẫn thư mục - Mặc định: \.
   + Thời gian giãn cách giữa các request - Mặc định: 5 giây.
   + Thư mục chứa các file crawl được - Mặc định: ..\output.
+  + Số lượng tối đa các kết quả trả về (không nên điều chỉnh quá lớn - API cho phép tối đa 30000, được chia thành 2000 kết quả một lần trả về, nếu lớn hon 30000 sẽ nhận được lỗi 404) - Mặc định: 100.
 
 Output: chứa trong thư mục đã chỉ định, với mỗi tập tin là kết quả trả về tương ứng với chủ đề đã đưa ra.
