@@ -45,9 +45,11 @@
   // save data text crawled into data.txt
   saveData(txtResult);
 
+  var date = new Date();
+  console.log('start', date.getSeconds());
   // convert data text to arrayAuthor
   var arrayObjectAuthor = convertToObject(arrayAuthor);
-  console.log('arrayObjectAuthor', arrayObjectAuthor);
+  // console.log('arrayObjectAuthor', arrayObjectAuthor);
 
   //export nodes
   var nodes = exportNodes(xmlResult);
@@ -55,10 +57,12 @@
 
   //export edges
   var edges = exportEdges(arrayObjectAuthor);
-  console.log('arrayEdges', edges);
+  // console.log('arrayEdges', edges);
 
   // draw graph
   draw(nodes, edges);
+  var dateFinish = new Date();
+  console.log('finish', dateFinish.getSeconds());
 })()
 
 function saveData(txtResult){
@@ -90,7 +94,7 @@ function convertToObject(arrayAuthor){
       }
       arrayAuthorConvert.push(authorObj)
   })
-  console.log('arrayAuthorConvert before', arrayAuthorConvert);
+  // console.log('arrayAuthorConvert before', arrayAuthorConvert);
   for( let i = 0; i < arrayAuthorConvert.length - 1; i++ ){
     for( let j = i+1; j < arrayAuthorConvert.length; j++ ){
       if(arrayAuthorConvert[i].name == arrayAuthorConvert[j].name){
@@ -119,7 +123,7 @@ function convertToObject(arrayAuthor){
       }
     }
   }
-  console.log('arrayAuthorConvert after', arrayAuthorConvert);
+  // console.log('arrayAuthorConvert after', arrayAuthorConvert);
   return arrayAuthorConvert;
 }
 
@@ -177,7 +181,7 @@ function exportEdges(arrayObjectAuthor){
 
 function draw(nodes, edges){
   // nodes = nodes.splice(0, 10);
-  console.log('nodes', nodes);
+  // console.log('nodes', nodes);
   var cy = cytoscape({
     container: document.getElementById('cy'),
 

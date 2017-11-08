@@ -9,7 +9,7 @@ $output_dir = "output";
 //Dấu phân cách thư mục
 $slash = "\\";
 //Số lượng tối đa các kết quả trả về
-$max_results = 100;
+$max_results = 200;
 //Thời gian giãn cách giữa các request (giây)
 $delay_time = 5;
 ////////////////////////////////////////////////////

@@ -17,7 +17,9 @@ Output: chứa trong thư mục đã chỉ định, với mỗi tập tin là k�
 
 
 Usage:
-Run on terminal:
-  1.    php arixiv.php
-  2.    php index.php
-  3.    view on browser: localhost:3000
+- delete file data.txt and result/xmlInput.txt
+- Run on terminal:
+    1.    mkdir result if not exists folder result
+    2.    php arixiv.php
+    3.    php index.php
+    4.    view on browser: localhost:3000
