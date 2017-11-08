@@ -1,6 +1,5 @@
-artificial intelligence
-big data
-distributed database
-apache spark
-apache hadoop
-mapreduce
+social network
+education
+ecommerce
+bigdata
+network security
